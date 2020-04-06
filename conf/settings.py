@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages'
+    'pages',
+    'webpack_loader',
 ]
 
 MIDDLEWARE = [
@@ -117,9 +118,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+FRONTEND_DIR = os.path.join(BASE_DIR, 'frontend')
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
+    os.path.join(FRONTEND_DIR, "assets"),
 )
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'dist/',  # must end with slash
+        'STATS_FILE': os.path.join(FRONTEND_DIR, 'webpack-stats.json')
+    }
+}

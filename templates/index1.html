@@ -1,3 +1,4 @@
+{% load render_bundle from webpack_loader %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Django React Webpack - Raturi.in</title>
+    {% render_bundle 'staticfiles' 'css' %}
 </head>
 
 <body>
@@ -17,6 +19,7 @@
     <center>
         At index1
     </center>
+    {% render_bundle 'staticfiles' 'js' %}
 </body>
 
 </html>
