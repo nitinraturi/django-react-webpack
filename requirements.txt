@@ -1,4 +1,4 @@
-Django==2.2
+Django==2.2.24
 django-webpack-loader==0.7.0
 pkg-resources==0.0.0
 pytz==2019.3
