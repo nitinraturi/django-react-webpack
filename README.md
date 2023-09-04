@@ -4,7 +4,7 @@ Multipage web application using django, react and webpack
 
 ## Setup
 - CD to the location where ```manage.py``` is located.
-- Create a [virtual environment](https://raturi.in/blog/installing-python-virtual-environment-ubuntu-mac-and-windows/) using python3: ```python -m venv venv```.
+- Create a [virtual environment](https://tech.raturi.in/installing-python-virtual-environment-ubuntu-mac-and-windows/) using python3: ```python -m venv venv```.
 - Activate virtual environment: ```source venv/bin/activate```
 - Install requirements: ```pip install -r requirements.txt```.
 - CD to frontend directory ```cd frontend```
@@ -17,4 +17,4 @@ Multipage web application using django, react and webpack
 - For production run: ```npm run build```.
 
 ### [Optional]: Create the project from scratch
-[https://raturi.in/blog/multi-page-web-application-using-django-react-and-webpack/](https://raturi.in/blog/multi-page-web-application-using-django-react-and-webpack/)
+[https://tech.raturi.in/multi-page-web-application-using-django-react-and-webpack/](https://tech.raturi.in/multi-page-web-application-using-django-react-and-webpack/)
